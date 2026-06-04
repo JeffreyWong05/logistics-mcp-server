@@ -130,6 +130,32 @@ def get_shipment_status(shipment_id: str) -> dict:
         }
     return {"shipment_id": shipment_id, **shipment}
 
+@mcp.tool()
+def update_shipment_status(shipment_id: str, new_status: str) -> dict:
+    """
+    Update the status of a shipment.
+
+    Args:
+        shipment_id: The shipment identifier (e.g. 'SHP-1001').
+        new_status: The new status to set (e.g. 'delivered', 'in_transit', 'pending_pickup').
+
+    Returns:
+        Updated shipment record. Returns an error dict listing known IDs if not found.
+    """
+    logger.info("Tool call: update_shipment_status(%s, %r)", shipment_id, new_status)
+    shipment = SHIPMENTS.get(shipment_id)
+    if not shipment:
+        return {
+            "error": f"Shipment '{shipment_id}' not found.",
+            "known_ids": list(SHIPMENTS.keys()),
+        }
+    previous_status = shipment["status"]
+    shipment["status"] = new_status
+    return {
+        "shipment_id": shipment_id,
+        "previous_status": previous_status,
+        **shipment,
+    }
 
 @mcp.tool()
 def lookup_driver(driver_id: str) -> dict:

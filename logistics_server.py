@@ -96,7 +96,7 @@ DRIVERS: dict[str, dict] = {
         "name": "R. Patel",
         "location": "Hamilton, ON",
         "hos_remaining_hours": 10.0,
-        "license_valid_until": "2026-06-01",
+        "license_valid_until": "2026-07-01",
         "status": "available",
     },
 }

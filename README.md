@@ -5,7 +5,7 @@ A production-deployed [Model Context Protocol](https://modelcontextprotocol.io) 
 **Live endpoint:** `https://logistics-mcp-202947932379.us-central1.run.app/mcp`
 **Status:** Deployed on Google Cloud Run
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Crw5bPiK9j4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>---
+https://github.com/user-attachments/assets/f3191a1b-3b39-454c-b43c-58064ca14949
 
 ## What is this?
 

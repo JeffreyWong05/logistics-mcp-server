@@ -3,7 +3,7 @@
 A production-deployed [Model Context Protocol](https://modelcontextprotocol.io) server that exposes logistics-domain tools — shipment tracking, driver lookup, fleet availability, and compliance checks — to AI agents like Claude.
 
 **Live endpoint:** `https://logistics-mcp-202947932379.us-central1.run.app/mcp`
-**Status:** ✅ Deployed on Google Cloud Run
+**Status:** Deployed on Google Cloud Run
 
 
 ---

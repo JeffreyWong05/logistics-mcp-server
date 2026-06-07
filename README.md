@@ -5,7 +5,7 @@ A production-deployed [Model Context Protocol](https://modelcontextprotocol.io) 
 **Live endpoint:** `https://logistics-mcp-202947932379.us-central1.run.app/mcp`
 **Status:** Deployed on Google Cloud Run
 
-
+https://youtu.be/Crw5bPiK9j4
 ---
 
 ## What is this?

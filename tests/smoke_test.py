@@ -136,7 +136,8 @@ def main() -> int:
     print("\nTesting find_available_drivers")
     result = tool_call("find_available_drivers", {"near_location": "Toronto"})
     check("Returns a list", isinstance(result, list))
-    print(f"  DEBUG raw envelope: {jsonrpc_call('tools/call', {'name': 'find_available_drivers', 'arguments': {'near_location': 'Toronto'}})!r}")
+    #Optional - print the full debug item to check the shape of the object returned
+    #print(f"  DEBUG raw envelope: {jsonrpc_call('tools/call', {'name': 'find_available_drivers', 'arguments': {'near_location': 'Toronto'}})!r}")
     check("At least one driver matches", isinstance(result, list) and len(result) > 0)
 
     # 6. check_compliance
